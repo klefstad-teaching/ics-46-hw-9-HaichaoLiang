@@ -27,10 +27,10 @@ bool edit_distance_within(const string& str1, const string& str2, int d) {
                 i++;
                 j++;
             }
+        }
         else {
             i++;
             j++;
-        }
         }
     }
     return edits + abs(len1 - i) + abs(len2 - j) <= d;
@@ -42,12 +42,12 @@ bool is_adjacent(const string &word1, const string &word2) {
 
 vector<string> generate_word_ladder(const string &begin_word, const string &end_word, const set<string>& word_list) {
     if(begin_word == end_word) {
-        error(start_word, end_word, "Start and end words must be different");
-        return;
+        error(begin_word, end_word, "Start and end words must be different");
+        return {begin_word};
     }
 
     queue<vector<string>> ladder_queue;
-    sset<string> visited;
+    set<string> visited;
 
     ladder_queue.push({begin_word});
     visited.insert(begin_word);
@@ -58,7 +58,7 @@ vector<string> generate_word_ladder(const string &begin_word, const string &end_
 
         string last_word = ladder.back();
         for(const string &word : word_list) {
-            if(is_adjacent(last_word, word) && visited.find(word) == visted.end()) {
+            if(is_adjacent(last_word, word) && visited.find(word) == visited.end()) {
                 vector<string> new_ladder = ladder;
                 new_ladder.push_back(word);
                 if(word == end_word) {
