@@ -746,7 +746,7 @@ CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o: ../gtest/student_gtest
   _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
   _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
   _deps/googletest-src/googletest/include/gtest/gtest_prod.h \
-  ../src/ladder.h \
+  ../src/dijkstras.h \
   /usr/include/c++/11/fstream \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
@@ -756,6 +756,9 @@ CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o: ../gtest/student_gtest
   /usr/include/c++/11/bits/stl_deque.h \
   /usr/include/c++/11/bits/deque.tcc \
   /usr/include/c++/11/bits/stl_queue.h \
+  /usr/include/c++/11/stack \
+  /usr/include/c++/11/bits/stl_stack.h \
+  ../src/ladder.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -779,10 +782,7 @@ CMakeFiles/student_gtests.dir/gtest/student_gtests.cpp.o: ../gtest/student_gtest
   /usr/include/c++/11/tr1/modified_bessel_func.tcc \
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  ../src/dijkstras.h \
-  /usr/include/c++/11/stack \
-  /usr/include/c++/11/bits/stl_stack.h
+  /usr/include/c++/11/tr1/riemann_zeta.tcc
 
 CMakeFiles/student_gtests.dir/src/dijkstras.cpp.o: ../src/dijkstras.cpp \
   /usr/include/stdc-predef.h \
@@ -1248,8 +1248,6 @@ CMakeFiles/student_gtests.dir/src/ladder.cpp.o: ../src/ladder.cpp \
   /usr/include/c++/11/tr1/riemann_zeta.tcc
 
 
-/usr/include/c++/11/bits/stl_stack.h:
-
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
 /usr/include/c++/11/tr1/poly_hermite.tcc:
@@ -1276,6 +1274,10 @@ CMakeFiles/student_gtests.dir/src/ladder.cpp.o: ../src/ladder.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
+../src/ladder.h:
+
+/usr/include/c++/11/bits/stl_stack.h:
+
 /usr/include/c++/11/bits/deque.tcc:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
@@ -1283,8 +1285,6 @@ CMakeFiles/student_gtests.dir/src/ladder.cpp.o: ../src/ladder.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
 
 /usr/include/c++/11/fstream:
-
-../src/ladder.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
